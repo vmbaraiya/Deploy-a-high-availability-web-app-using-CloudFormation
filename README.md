@@ -8,3 +8,6 @@ create.sh ==> Script to create new cloudformation stack. Requires following argu
   
  update.sh ==> Script to update the cloudformation stack. requires following arguments in order:
  ./update.sh <stack name> <YAML template file name> <JSON Parameter file name>
+
+
+Log information for UserData scripts is located in this file: cloud-init-output.log under the folder: /var/log.
