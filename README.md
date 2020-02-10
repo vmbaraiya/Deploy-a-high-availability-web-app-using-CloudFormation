@@ -54,15 +54,15 @@ aws-cli/1.17.9 Python/3.6.0 Windows/10 botocore/1.14.9
 
 **Create Stack
 ```shell
- $ aws cloudformation create-stack --stack-name *stackname* \
-    --template-body file://stackyamlfile \
-    --parameters file://parameterjsonfile 
+ $ aws cloudformation create-stack --stack-name <stackname> \
+    --template-body file://<stackyamlfile> \
+    --parameters file://<parameterjsonfile> 
 ```
 **Update Stack
 ```shell
- $ aws cloudformation update-stack --stack-name *stackname* \
-    --template-body file://stackyamlfile \
-    --parameters file://parameterjsonfile
+ $ aws cloudformation update-stack --stack-name <stackname> \
+    --template-body file://<stackyamlfile> \
+    --parameters file://<parameterjsonfile>
 ```
 
  * Log information for UserData scripts is located in this file: cloud-init-output.log under the folder: /var/log.
@@ -76,20 +76,26 @@ aws-cli/1.17.9 Python/3.6.0 Windows/10 botocore/1.14.9
        ./update.sh <stack name> <YAML template file name> <JSON Parameter file name>
 
    1. Create Network Stack using Network Stack files
+   
        1a. network.parameters.json ==> parameter file for cloudformation  stack to create network components.
+       
        1b. network.yml  ==>  cloudformation yaml file to create the network stack ( VPC, subnets, NAT gateway, Internet Gateway)
        
      
    2. create Server Stack using Server stack files
+   
       2a. server-parameters.json ==> parameter file tfor cloudformation stack to create infrastructure.
+      
       2b. servers.yml ==> cloudformation yaml file to create infrastructure stack ( Security group, Instances, Load Balancer, Bastion host, Auto Scale, Listener, listener rule, targets)
       
-      **To Use IAMInstance profile with EC2 Instance for accessing AWS Resource like S3: use below create stack command with ----capabilities argument**
+      **To Use IAMInstance profile with EC2 Instance for accessing AWS Resource like S3:**
+      use below create stack command with --capabilities argument
+      
       ```shell
       $ aws cloudformation create-stack --stack-name webappserverstack \
       --template-body file://servers.yml \
       --parameters file://server-parameters.json --capabilities CAPABILITY_IAM
-    ```
+      ```
       
 **Command line**
 ```shell
