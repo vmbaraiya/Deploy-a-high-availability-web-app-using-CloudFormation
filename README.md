@@ -25,7 +25,7 @@ This project helps to practice skills with Infrastructure as a code using cloudf
 
  * Diagrams are a very important starting point for planning your cloud infrastructure. DevOps engineers start with a visual representation of the required cloud infrastructure before they turn it into code. 
 
-![Diagram for deployment]https://github.com/vmbaraiya/Deploy-a-high-availability-web-app-using-CloudFormation/blob/master/CloudFormation-Project.png)
+![Diagram for deployment](https://github.com/vmbaraiya/Deploy-a-high-availability-web-app-using-CloudFormation/blob/master/CloudFormation-Project.png)
 
 ## Prerequisite
  * AWS Account
