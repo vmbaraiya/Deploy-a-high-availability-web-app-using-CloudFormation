@@ -52,13 +52,13 @@ aws-cli/1.17.9 Python/3.6.0 Windows/10 botocore/1.14.9
 
 ### AWS Cludformation create Stack and Update Stack
 
-**Create Stack
+ - Create Stack
 ```shell
  $ aws cloudformation create-stack --stack-name <stackname> \
     --template-body file://<stackyamlfile> \
     --parameters file://<parameterjsonfile> 
 ```
-**Update Stack
+ - Update Stack
 ```shell
  $ aws cloudformation update-stack --stack-name <stackname> \
     --template-body file://<stackyamlfile> \
@@ -105,7 +105,7 @@ aws s3 cp <file name> <link to S3 bucket>
  
 ### CloudFormation retention policy
    •	You'll want your data to persist even if your stack of resources is updated or deleted.
-   •	* [Retention policy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html): keeps a service even if the entire stack of infrastructure is marked for removal. In CloudFormation, the syntax is DeletionPolicy: retain. This is very useful to assign to your data storage (database, file storage), to make sure that your data is saved even when the stack is updated or deleted.
+   •	 [Retention policy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html): keeps a service even if the entire stack of infrastructure is marked for removal. In CloudFormation, the syntax is DeletionPolicy: retain. This is very useful to assign to your data storage (database, file storage), to make sure that your data is saved even when the stack is updated or deleted.
 
  
  ### Reference Documents for more details:
