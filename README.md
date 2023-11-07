@@ -1,3 +1,5 @@
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/vmbaraiya/Deploy-a-high-availability-web-app-using-CloudFormation/badge)](https://securityscorecards.dev/viewer/?uri=github.com/vmbaraiya/Deploy-a-high-availability-web-app-using-CloudFormation)
+
 # Deploy-a-high-availability-web-app-using-CloudFormation
 
 This project helps to practice skills with Infrastructure as a code using cloudformation.
